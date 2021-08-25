@@ -1,0 +1,123 @@
+body{
+    margin: 0px;
+    border-style: solid;
+    border-width: 10px  ;
+    border-color: white green gray orange;
+    overflow: hidden;
+
+}
+div.card{
+    text-align: center;
+    font-size: 40px;
+}
+
+div.sky{
+    background-image: url("./sky.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+    width: 100%;
+
+    position: relative;
+    z-index: -1;
+}
+div.road{
+    background-image: url("./road.jpg");
+    height: 300px;
+    width: 700%;
+    z-index: 1;
+
+    position: absolute;
+    bottom: 0px;
+
+    animation: road 5s linear infinite;
+}
+@keyframes road {
+    100%{
+        transform: translateX(-3500px);
+    }
+}
+div.city{
+    background-image: url("./city.png");
+    height: 250px;
+    width: 500%;
+    z-index: 8;
+
+    position: absolute;
+    top: 204px;
+
+    animation: city 15s linear infinite;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-1500px);
+    }
+}
+div.sun{
+
+    position: absolute;
+    top: 100px;
+    right: 0px;
+
+    animation: sun 10s linear infinite;
+}
+@keyframes sun {
+    100%{
+        transform: translateX(-1500px);
+    }
+}
+
+div.car{
+
+    position: absolute;
+    top: 460px;
+    left: 0;
+    right: 0;
+
+    z-index: 6;
+
+    display: flex;
+    justify-content: center;
+
+    animation: car 5s linear infinite;
+}
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+}
+div.wheel{
+    position: absolute;
+    top: 529px;
+
+    z-index: 7;
+
+}
+.tire{
+    animation: wheel 1s linear infinite;
+
+}
+.one{
+    left: 821px;
+    position: absolute;
+}
+.two{
+    left: 630px;
+    position: absolute;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+div.flag{
+    position: absolute;
+    top: 480px;
+    left: 875px;
+
+    z-index: 10;
+}

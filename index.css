@@ -1,0 +1,131 @@
+body{
+    background-color: yellow;
+}
+div.full{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.box1{
+    background: rgb(51, 170, 224);
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin:0px 0px 100px 50px;
+    animation-name: box1-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+
+}
+@keyframes box1-animation {
+    50%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+
+}
+.box2{
+    background: gray;
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin:0px 0px 100px 50px;
+    animation-name: box2-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes box2-animation {
+    50%{
+        transform: skewX(-30deg);
+    }
+    100%{
+        transform: skewX(30deg);
+    }
+
+}
+
+.box3{
+    background: rgb(51, 170, 224);
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin:0px 0px 100px 50px;
+    animation-name: box3-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes box3-animation {
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+.box4{
+    background: rgb(51, 170, 224);
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-left: 50px;
+
+}
+.child{
+    border: 4px solid rgb(8, 88, 128);
+    box-sizing: border-box;
+    animation-name: child-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes child-animation {
+    100%{
+        transform: scaleY(0.5);
+    }
+}
+.child1{
+    border: 4px solid maroon;
+    box-sizing: border-box;
+    background: rgb(202, 50, 50);
+    animation-name: child1-animation;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes child1-animation {
+    100%{
+        transform: scaleX(0.5);
+    }
+}
+
+.child2{
+    border: 4px solid green;
+    box-sizing: border-box;
+    background: rgb(54, 194, 54);
+    animation-name: child2-animation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes child2-animation {
+    100%{
+        transform: rotate(120deg);
+    }
+}
