@@ -44,7 +44,7 @@ div.city{
     z-index: 8;
 
     position: absolute;
-    top: 177px;
+    top: 204px;
 
     animation: city 15s linear infinite;
 }
