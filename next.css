@@ -1,3 +1,6 @@
+body{
+    background-color: yellow;
+}
 .box{
     list-style: none;
     background: rgb(17, 240, 17);
